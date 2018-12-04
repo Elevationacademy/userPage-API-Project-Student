@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="searchContainer">
+            <button id = "genPage">Generate New User</button>
+        </div>
+        <div class="userContainer"></div>
+        <div class="quoteContainer"></div>
+        <div class="contentContainer">
+            <div class="pokemonContainer"></div>
+            <div class="meatContainer"></div>
+        </div>
+        <div class="friendsContainer">
+            <h1><u>Friends</u></h1>
+        </div>
+    </div>
+
+    <!-- ------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
+    <!-- ---------------------------------------------------------------------- -->
+    <script id="user-template" type="text/x-handlebars-template">
+        <!-- Write Main User Handlebars template here -->
+    </script>
+    <!-- ------------------------------------------------------------------------->
+    <script id="user-friends-template" type="text/x-handlebars-template">
+        <!-- Write Friend List Handlebars template here  -->
+    </script>
+    <!-- ---------------------------------------------------------------------- -->
+    <script id="quote-template" type="text/x-handlebars-template">
+        <!-- Write Quote Handlebars template here -->
+    </script>
+    <!-- ---------------------------------------------------------------------- -->
+    <script id="pokemon-template" type="text/x-handlebars-template">
+        <!-- Write Pokemon Handlebars template here -->
+    </script>
+    <!-- ---------------------------------------------------------------------- -->
+    <script id="meat-template" type="text/x-handlebars-template">
+        <!-- Write Meat Handlebars template here -->
+    </script>
+    <!-- ---------------------------------------------------------------------- -->
+
+    <script src="Renderer.js"></script>
+    <script src ="Requester.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
