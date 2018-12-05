@@ -1,4 +1,4 @@
-class Generator {
+class APIManager {
     constructor() {
 
     }
