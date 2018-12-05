@@ -1,3 +1,6 @@
+//This is the class that will manage all your APIs
+//Each method should also invoke the renderer for its own section
+
 class APIManager {
     constructor() {
 
@@ -18,7 +21,3 @@ class APIManager {
         // generate your new page here
     }
 }
-
-// const requester = new Requester()
-
-// export default Requester

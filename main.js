@@ -1,4 +1,4 @@
-// Creat Instances of your classes here
+// Create instances of your classes here
 
 
 
