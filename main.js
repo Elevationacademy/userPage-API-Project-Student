@@ -1,9 +1,2 @@
-// Create instances of your classes here
-
-
-
-
-
-
-// Render your page and create an on-click to generate a new user here
-
+// Create instances of your classes
+// Create the loadData and renderData functions - these should use the relevant instance
