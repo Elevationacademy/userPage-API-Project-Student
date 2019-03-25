@@ -1,19 +1,28 @@
 // Fill in the functions for your Renderer Class
 
 class Renderer {
-    renderUsers(users) {
+    _renderUsers(users) {
 
     }
-    renderFriends(users) {
+
+    _renderFriends(users) {
 
     }
-    renderQuote(quoteInfo) {
+
+    _renderQuote(quoteInfo) {
 
     }
-    renderPokemon(pokemonInfo) {
+
+    _renderPokemon(pokemonInfo) {
 
     }
-    renderMeat(meatText) {
 
+    _renderMeat(meatText) {
+
+    }
+
+    render(data){
+        //invokes all the individual _render methods
     }
 }
+
