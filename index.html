@@ -12,63 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="buttons">
-            <button onclick=loadData()>Load User Data</button>
-            <button onclick=renderData()>Display User</button>
-        </div>
-        <div class="user-container"></div>
-        <div class="quote-container"></div>
-        <div class="content-container">
-            <div class="pokemon-container"></div>
-            <div class="meat-container"></div>
-        </div>
-        <div class="friends">
-            <h4>Friends</h4>
-            <div class="friends-container">
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------- -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script id="user-template" type="text/x-handlebars-template">
-        <div id = "profile-pic" style = "background-image: url({{picture.medium}})"></div>
-        <div class="user-info">
-            <div>{{toProperCase name.first}} {{toProperCase name.last}}</div>
-            <div>{{toProperCase location.city}}, {{toProperCase location.state}}</div>
-        </div>
-    </script>
-    <!-- ----------------------------------------------------->
-    <script id="user-friends-template" type="text/x-handlebars-template">
-        <ul class="user-friends">
-            {{#each friends}}
-            <li>{{toProperCase this.name.first}} {{toProperCase this.name.last}}</li> <br>
-            {{/each}}
-        </ul>
-    </script>
-    <!-- ---------------------------------------------------- -->
-    <script id="pokemon-template" type="text/x-handlebars-template">
-            <span id = "pokemon-image" style = "background-image: url({{sprites.front_default}})"></span>
-            <span id= "pokemon-text">Favorite Pokemon: {{toProperCase name}}</span>
-    </script>
-    <!-- ------------------------------------------------------ -->
-    <script id="meat-template" type="text/x-handlebars-template">
-        <div class="meat-text">
-                <p>About me:</p>
-                {{text}}
-        </div>
-    </script>
-    <!-- ------------------------------------------------------ -->
-    <script id="quote-template" type="text/x-handlebars-template">
-        <p>Favorite quote:</p>
-        <span><i>"{{quote}}"</i> <br>
-            - {{author}}</span>
-    </script>
-    <!-- ------------------------------------------------------ -->
-    <script src="Renderer.js"></script>
-    <script src="APIManager.js"></script>
-    <script src="main.js"></script>
+
 </body>
 
 </html>
