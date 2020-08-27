@@ -12,23 +12,78 @@
 </head>
 
 <body>
-    <div class="container">	
-        <div class="user-container"></div>	
-        <div class="quote-container"></div>	
-        <div class="content-container">	
-            <div class="pokemon-container"></div>	
-            <div class="meat-container"></div>	
-        </div>	
-        <div class="friends">	
-            <h4>Friends</h4>	
-            <div class="friends-container">	
-            </div>	
-        </div>	
-        <div class="buttons">	
-            <button>Load User Data</button>	
-            <button>Display User</button>	
-        </div>	
+    <div class="container">
+    
+        <div class="user-container"></div>
+        <div class="quote-container"></div>
+        <div class="content-container">
+            <div class="pokemon-container"></div>
+            <div class="food-container"></div>
+            <!-- ^ changed from "meat-conteiner" ^ -->
+        </div>
+    
+        <div class="friends">
+            <h4>Friends</h4>
+            <div class="friends-container"> </div>
+        </div>
+    
+        <div class="buttons">
+            <button id="load">Load User Data</button>
+            <button id="render">Display User</button>
+            <button id="save"> Save User Page</button>
+            <button id="import">Import User Page</button>
+            <select id="dropdown" >Choose User </select>
+        </div>
     </div>
+
+
+
+
+    <script id = "user-template" class = "user-info" type="text/x-handlebars-template">
+        <img id = "profile-pic" src ={{img}}>
+        <h2>{{name}}</h2>
+        <h3>{{city}}, {{state}}</h3>
+    </script>
+
+    <script id ="quote-template"  type="text/x-handlebars-template">
+        <p>Favorite Quote:</p>
+        <h4>" {{text}} "</h4>
+        <h4>-Taylor Swift</h4>
+    </script>
+
+    <script id = "pokemon-template"  type="text/x-handlebars-template">
+        <img id = "pokemon-image" src={{sprite}} >
+       <h4  id = "pokemon-text">Favorite Pokémon:  {{pokeName}} </h4> 
+    </script>
+
+
+    <script id ="food-template"  type="text/x-handlebars-template">
+        <h3> Fvorite Food:  {{foodName}} </h3>
+        <p class = "food-text" > <h4> How To Make: </h4> {{foodInst}}</p>
+    </script>
+
+
+    <script id="friends-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each theFriends}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        </script>
+
+
+    <script id = "dropdown-template" type="text/x-handlebars-template">
+        <option id ={{value}} value = {{value}}>User {{value}}</option>
+    </script>
+
+
+
+
+    <script src="handlebars-v4.7.6.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="APIManager.js"></script>
+    <script src="Renderer.js"></script>
+    <script src = "main.js"></script>
 </body>
 
 </html>

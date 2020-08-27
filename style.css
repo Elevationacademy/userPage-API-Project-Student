@@ -122,7 +122,15 @@ button {
     border-bottom: 1px solid #2c3e50;
 }
 
-.meat-text {
+.food-text {
     padding: 1vw;
     font-size: 1vmax;
+}
+
+.food-container{
+    padding:1vw;
+}
+
+#dropdown{
+    background-color: #27ae5f5d;
 }
