@@ -1,0 +1,22 @@
+{
+  "name": "userpage-api-project-student",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/issaZananiri/userPage-API-Project-Student.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/issaZananiri/userPage-API-Project-Student/issues"
+  },
+  "homepage": "https://github.com/issaZananiri/userPage-API-Project-Student#readme",
+  "dependencies": {
+    "validator": "^13.1.17"
+  }
+}

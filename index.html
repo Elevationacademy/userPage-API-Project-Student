@@ -10,7 +10,48 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
 </head>
-
+<script id="usersData-temp" type="text/x-handlebars-template">
+    <div class="user-info">
+        <img id="profile-pic" src="{{pic}}">
+        <div class="user-data">
+            <p>{{first}} {{last}}</p>
+            <p>{{city}}, {{state}}</p>
+        </div>
+    </div>
+</script>
+<script id="friendsData-temp" type="text/x-handlebars-template">
+    {{#if this.length}}
+        <ul>
+        {{#each this}}
+            <li>{{first}} {{last}}</li>
+        {{/each}}
+        </ul>
+    {{/if}}
+</script>
+<script id="quotesData-temp" type="text/x-handlebars-template">
+    {{#if this.length}}
+        <p>Favorite quote:</p>
+        {{#each this}}
+            <span>"{{capitalize quote}}"<br>- Kanye</span>
+        {{/each}}
+    {{/if}}
+</script>
+<script id="baconsData-temp" type="text/x-handlebars-template">
+    {{#if this.length}}
+        <p class="meat-text">About me:</p>
+        {{#each this}}
+            <p class="meat-text">{{capitalize bacon}}</p>
+        {{/each}}
+    {{/if}}
+</script>
+<script id="pokemonsData-temp" type="text/x-handlebars-template">
+    {{#if this.length}}
+        {{#each this}}
+            <img id="pokemon-image" src="{{image}}">
+            <p id="pokemon-text">Favorite Pokemon: {{capitalize text}}</p>
+        {{/each}}
+    {{/if}}
+</script>
 <body>
     <div class="container">	
         <div class="user-container"></div>	
@@ -25,10 +66,17 @@
             </div>	
         </div>	
         <div class="buttons">	
-            <button>Load User Data</button>	
-            <button>Display User</button>	
+            <button id="loadData">Load User Data</button>	
+            <button id="displayData">Display User</button>	
+            <button id="saveStorage">Save User Page</button>
+            <button id="loadStorage">Load User Page</button>
+
         </div>	
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="APIManager.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="Renderer.js"></script>
 </body>
-
 </html>
